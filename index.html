@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Receiver</title>
+
+	<script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
+	<script type="text/javascript" src="receiver.js"></script>
+
+	<style type="text/css">
+		body {
+			background-color: #111;
+			color: #EEE;
+			margin: 35px;
+			font-family: sans-serif;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		pre {
+			padding: 10px;
+			background-color: #000;
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Receiver</h1>
+	<pre id="app"></pre>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			new Receiver(document.getElementById('app'), 'urn:x-cast:akupila.chromecast.test');
+		};
+	</script>
+
+</body>
+</html>

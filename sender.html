@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sender</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<script type="text/javascript" src="//www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+	<script type="text/javascript" src="sender.js"></script>
+
+	<style type="text/css">
+		body {
+			background-color: #111;
+			color: #EEE;
+			margin: 10px;
+			font-family: sans-serif;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		#app {
+			margin: 20px 0;
+		}
+
+		pre {
+			padding: 10px;
+			background-color: #000;
+			font-size: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Sender</h1>
+	<div id="app"></div>
+	<pre id="debug"></pre>
+
+	<script type="text/javascript">
+		window.onload = function() {
+
+			new Sender(
+				document.getElementById('app'),
+				document.getElementById('debug'),
+				'B030C4BA',
+				'urn:x-cast:akupila.chromecast.test'
+			);
+
+		};
+	</script>
+
+</body>
+</html>
