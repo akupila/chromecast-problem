@@ -2,6 +2,8 @@
 
 Example to replicate issue connecting to Chromecast from Chrome on iOS
 
+Related to https://code.google.com/p/google-cast-sdk/issues/detail?id=714
+
 ## Problem
 
 When connecting to a custom Chromecast app from Chrome on iOS the connection always fails. 
